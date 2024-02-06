@@ -1,0 +1,53 @@
+@import url("../../variables.css");
+
+.main {
+  width: 100%; height: auto;
+  background-color: var(--background);
+}
+
+.main__bg-square {
+  position: fixed;
+  width: 400px; height: 400px;
+  border: 2px solid var(--border);
+  z-index: 0;
+}
+
+.square-bottom {
+  transform: rotate(20deg);
+  top: 500px; left: -100px;
+}
+
+.square-top {
+  transform: rotate(-20deg);
+  top: -100px; right: -100px;
+}
+
+.main-container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1200px){
+  .main-container {
+    max-width: 1140px;
+  }
+}
+
+@media screen and (min-width: 962px) {
+  .main-container {
+    min-width: 960px;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 576px){
+  .main-container {
+    max-width: 540px;
+  }
+}
