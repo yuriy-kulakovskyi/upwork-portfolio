@@ -18,6 +18,9 @@
   width: 50px; height: 50px;
   border-radius: 100%;
   background-color: grey;
+  background-size: cover;
+  background-position: center;
+  background-image: url("./img/avatar.webp");
 }
 
 .header__user-name {
