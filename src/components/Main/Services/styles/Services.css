@@ -1,0 +1,50 @@
+@import url("../../../variables.css");
+
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.services__container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.services__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.services__icon {
+  font-size: 50px;
+  color: var(--blue);
+}
+
+.services__list {
+  list-style-type: none;
+}
+
+.services__list-item {
+  margin: 10px 0;
+  color: var(--primary);
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+/* media */
+@media screen and (min-width: 962px) {
+  .services__container {
+    flex-direction: row;
+  }
+}

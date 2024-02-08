@@ -28,25 +28,29 @@
   margin: 0 auto;
 }
 
-@media (min-width: 1200px){
+.main section {
+  padding: 40px 0;
+}
+
+@media screen and (min-width: 1200px){
   .main-container {
-    max-width: 1140px;
+    min-width: 1140px;
   }
 }
 
 @media screen and (min-width: 962px) {
   .main-container {
-    min-width: 960px;
+    max-width: 960px;
   }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .main-container {
     max-width: 720px;
   }
 }
 
-@media (min-width: 576px){
+@media screen and (min-width: 576px){
   .main-container {
     max-width: 540px;
   }
