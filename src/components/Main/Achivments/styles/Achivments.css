@@ -1,0 +1,60 @@
+@import url("../../../variables.css");
+
+.achivments {
+  width: 100%; min-height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.achivments__list {
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 30px;
+  gap: 20px;
+}
+
+.achivments__item {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.achivments__item .item__title {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: #8c8c8c;
+  font-weight: 400;
+}
+
+.achivments__item .item__number {
+  font-size: 80px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  color: var(--blue);
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .achivments__item .item__number {
+    font-size: 180px;
+  }
+
+  .achivments__item:nth-child(2) {
+    align-items: center;
+  }
+
+  .achivments__item:nth-child(3) {
+    align-items: flex-end;
+  }
+}

@@ -1,4 +1,4 @@
-import React from 'react'
+import { useState } from 'react';
 
 // styles
 import './styles/Main.css';
@@ -9,7 +9,16 @@ import Home from './Home/Home';
 // services component import
 import Services from './Services/Services';
 
+// achivments component import
+import Achivments from './Achivments/Achivments';
+
 const Main = () => {
+  // followers state
+  const [user, setUser] = useState({
+    followers: 0,
+    repos: 0
+  });
+
   return (
     <main className="main">
       <div className="main-container">
@@ -24,6 +33,9 @@ const Main = () => {
 
         {/* services */}
         <Services />
+
+        {/* achivments */}
+        <Achivments user={user} setUser={setUser} />
       </div>
     </main>
   )

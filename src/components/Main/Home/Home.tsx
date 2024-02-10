@@ -3,6 +3,8 @@ import * as React from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+import { Autoplay } from 'swiper/modules';
+
 // header component import
 import Header from './Header/Header'
 
@@ -15,8 +17,8 @@ import './styles/Home.css';
 // Import Swiper styles
 import 'swiper/css';
 
-const Home = () => {
 
+const Home = () => {
   return (
     <section className="home">
       <Header />
@@ -25,6 +27,12 @@ const Home = () => {
         loop={true}
         slidesPerView={1}
         navigation={true}
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false
+        }}
+        modules={[Autoplay]}
+        speed={1000}
       >
         <SwiperSlide>
           <div className="home__content">
